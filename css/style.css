@@ -1,3 +1,9 @@
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
@@ -5,6 +11,11 @@ body {
     margin: 0;
 }
 
+.header {
+    background: #F2F3F6;
+}
+
+/* menu */
 .menu {
     list-style: none;
     padding: 0;
@@ -20,9 +31,18 @@ body {
     text-decoration: none;
 }
 
+.menu__link:hover {
+    color: #1A75E8;
+}
+
+/* Button */ 
+
 .button {
     text-decoration: none;
     display: inline-block;
+    border: none;
+    
+    font-size: 16px;
 }
 
 .button__link {
@@ -39,5 +59,107 @@ body {
     padding-bottom: 15px;
     padding-left: 30px;
     color: #fff;
+}
+
+.button__icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.button__text {
+    vertical-align: middle;
+}
+
+
+/* Hero */
+.hero__title {
+    font-size: 44px;
+    line-height: 53px;
+    margin-bottom: 15px;
+    margin-top: 43px;
+}
+
+.hero__text {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+/* Input */
+.input__group {
+    background-color: #fff;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 25px;
+}
+
+.input {
+    background-color: #fff;
+    border: none;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+/* Tags */
+
+.tags__group {
+    padding-left: 15px;
+    color: #B2B2B2;
+}
+
+.tag {
+    color: #B2B2B2;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+
+    border: 1px solid #B2B2B2;
+    border-radius: 5px;
+}
+
+/* card */
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.section__title {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.card {
+    text-decoration: none;
+    color: #111238;
+
+    background: #F2F3F6;
+    border-radius: 10px;
+    padding: 35px;
+
+    transition: background .2s, color .2s;
+}
+
+.card:hover {
+    background-color: #1a75e8;
+    color: #fff;
+}
+
+.card:hover .card__icon {
+    fill: #fff;
+}
+
+.card__icon {
+    fill: #111238;
+    margin-bottom: 15px;
+    transition: fill .2s;
 }
 
